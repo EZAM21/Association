@@ -266,6 +266,22 @@ footer nav ul li a {
           footer nav ul li {
             margin-bottom: 10px;
           }
+
+	    @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .conteneur .img-2 {
+          display: block;
+          align-items: center;
+          justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+
+    .conteneur .img-2 {
+          display: block;
+    }
+    
+}
         
     }
     
