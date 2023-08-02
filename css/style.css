@@ -5,20 +5,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
  
-  .nav a {
-    color: white;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .header {
-    background: #f00;
-    width: 360px;
-    padding: 0 20px;
-    display:inline-block;
-    vertical-align:top;
-  }
-
 .header {
     background-color: #DEE8FB;
     width: 100%;
@@ -111,7 +97,7 @@ hr {
 
 .conteneur .img-2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 10px;
     font-size: small;
 }
@@ -139,32 +125,36 @@ footer nav ul li a {
 }
 /* Fin footer */
 
-/* Pour les écrans jusqu'à 768px de largeur */
-@media screen and (max-width: 768px) {
+   
+@media screen and (max-width: 760px) {
+    body {
+        display: block;
+    }
+
     .header {
         background-color: red;
         width: auto;
     }
-
+    
     .header_logo img {
         display: none;
     }
-
-
+    
+    
     .header_nav_menu {
         display: none;
     }
-
+    
     ul {
         flex-direction: column;
     }
-
+    
     .header_nav_menu ul li a:hover {
         color: white;
         transition: .5s;
-
+    
     }
-
+    
     
     .conteneur {
         display: flex;
@@ -184,79 +174,14 @@ footer nav ul li a {
     footer nav ul li {
         margin-bottom: 10px;
     }
-
-    .bouton{
-		display: block;
-        color: white;
-  	}
     
+    .bouton{
+        display: block;
+        color: white;
+      }
 }
 
-/*.line{
-	border-bottom: 5px solid black;
-	width:50px;
-	margin-bottom:10px;
-	border-radius: 30%;
-	
-}*/
-
-
-
-/* .conteneur.img-2 {
-        width: 400px;
-        height: 184px;
-        margin-left: 3.5rem;
-        display: flex;
-        align-items: center;
-    }
-    
-    .conteneur h1{
-        text-align: center;
-        color: red;
-        font-family: Arial, Helvetica, sans-serif;      
-        transition: .3s;
-        z-index: -1;
-    }
-    .conteneur a{
-        text-decoration: none;
-    }
-    .conteneur h1:hover{
-        color: black;
-        cursor: pointer;
-        
-    }
-        
-    .conteneur h2, p {
-        text-align: left;
-        padding: 2rem;
-    }*/
-   
-    /* Fin footer 
-    
-    Pour les écrans jusqu'à 768px de largeur 
-    @media screen and (max-width: 768px) {
-        .conteneur{
-            display: flex;
-            flex-direction: column;
-        }
-    
-        .conteneur p,
-        .conteneur h2,
-        .conteneur .img-2 {
-            flex-direction: column;
-        }
-    
-        footer nav ul {
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-          }
-        
-          footer nav ul li {
-            margin-bottom: 10px;
-          }
-
-	    @media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .conteneur .img-2 {
           display: block;
           align-items: center;
@@ -271,6 +196,3 @@ footer nav ul li a {
     }
     
 }
-        
-    }
-    
