@@ -18,17 +18,6 @@ body {
     display:inline-block;
     vertical-align:top;
   }
-  
-  .nav {
-    padding: 25px;
-  }
-  
-  .main {
-    padding: 25px;
-    flex: 1;
-    display:inline-block;
-  }
-  
 
 .header {
     background-color: #DEE8FB;
